@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <nav>
+                <h1 class=" text-center mt-4  " >Dom Manipulation With Form</h1>
+            </nav>
+        </header>
+        <main>
+  <div class="d-flex container  ">          
+            <form class="row g-3 m-5   mt-5 col-5 ">
+                <div class="col-md-12  ">
+                    <label for="inputEmail4" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="namefirst" id="firstname" > 
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputPassword4" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname">
+                  </div>
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="mail">
+                </div>
+            
+                <div class="col-md-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control " id="address" placeholder="1234 Main St">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Pincode</label>
+                    <input type="text" class="form-control" id="pincode">
+                  </div>
+              
+                <div class="row mt-3">
+                    <label for="">Genter</label>
+                    <div class="form-check m-2 " id="malfemale" >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check m-2 ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="female" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                         Female
+                        </label>
+                      </div>
+                </div>
+
+
+                <div class="form-group mb-3 mb-md-3">
+                  <label for="food" id="foodlist" class="form-label fw-bold">Foods:</label>
+                  <span>&nbsp;
+                    <input type="checkbox" name="food" id="idly" value="idly">
+                    <label for="idly">Idly</label>
+                  </span>
+                  <span>&nbsp;
+                    <input type="checkbox" name="food" id="dosai" value="dosai">
+                    <label for="dosai">Dosai</label>
+                  </span>
+                  <span>&nbsp;
+                    <input type="checkbox" name="food" id="chapathi" value="chapathi">
+                    <label for="chapathi">Chapathi</label>
+                  </span>
+                  <span>&nbsp;
+                    <input type="checkbox" name="food" id="parota" value="parota">
+                    <label for="parota">Parota</label>
+                  </span>
+                  <span>&nbsp;
+                    <input type="checkbox" name="food" id="briyani" value="briyani">
+                    <label for="briyani">Briyani</label>
+                  </span><br />
+                  <span id="error" class="text-danger fw-bold"></span>
+                </div>
+
+           
+
+                <div class="col-md-12">
+                    <label for="inputEmail4" class="form-label">State</label>
+                    <input type="text" class="form-control" id="state"> 
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputPassword4" class="form-label">Country</label>
+                    <input type="text" class="form-control" id="contry">
+                  </div>
+              
+                <div class="col-12">
+                  <button type="submit" id="btnt" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            
+
+
+            <div class="container mt-5" id="divele">
+                <h2 id="headele" >DATA TABLE</h2>
+                <p id="para">The print form data for user details</p>            
+                <table id="table" class="table ">
+                  <tbody>
+                    <tr>
+                      <td >First Name </td>
+                      <td id="tfirstname"></td>
+                     
+                    </tr>
+                    <tr>
+                      <td>Last Name </td>
+                      <td id="tlastname"></td>
+                     
+                    </tr>
+                    <tr>
+                      <td>Email </td>
+                      <td id="temailele"></td>
+                     
+                    </tr>
+                    <tr>
+                        <td>address </td>
+                        <td id="taddre"></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>Pincode </td>
+                        <td id="tpincode" ></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>Genter </td>
+                        <td id="tgent"></td>
+                        <tr>
+                            <td>Food </td>
+                            <td id="tfood" ></td>
+                           
+                          </tr>
+
+                          <tr>
+                            <td>State </td>
+                            <td id="tstate"></td>
+                           
+                          </tr>
+                          <tr>
+                            <td  >Country </td>
+                            <td id="tcountry"></td>
+                           
+                          </tr>
+                       
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="script.js" ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
